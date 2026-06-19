@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Book a training session at SRC Sports Academy">
+<title>Book Online - SRC Sports Academy</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header role="banner">
+<nav class="navbar" role="navigation" aria-label="Main Navigation">
+<h1 class="logo">SRC Sports Academy</h1>
+<button class="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">☰</button>
+<ul class="nav-links" id="navMenu">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="activities.html">Activities</a></li>
+<li><a href="booking.html" aria-current="page">Booking</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<section class="page-header" aria-label="Page Header">
+<h1>Book Your Training Session</h1>
+<p>Reserve your spot in any of our sports programs</p>
+</section>
+
+<section class="booking-instructions" aria-label="Booking Instructions">
+<h2>How to Book</h2>
+<ol>
+<li>Fill out the form below with your details</li>
+<li>Select your preferred sport and time slot</li>
+<li>Review the booking instructions</li>
+<li>Submit your booking request</li>
+<li>You will receive a confirmation email with details</li>
+</ol>
+</section>
+
+<section class="form-section">
+<form id="bookingForm" method="POST" action="#" role="form" aria-label="Booking Form">
+<fieldset>
+<legend>Your Information</legend>
+
+<div class="form-group">
+<label for="bookFullName">Full Name <span aria-label="required">*</span></label>
+<input type="text" id="bookFullName" name="fullName" required aria-required="true" aria-label="Full Name">
+<span class="error-message"></span>
+</div>
+
+<div class="form-group">
+<label for="bookEmail">Email Address <span aria-label="required">*</span></label>
+<input type="email" id="bookEmail" name="email" required aria-required="true" aria-label="Email Address">
+<span class="error-message"></span>
+</div>
+
+<div class="form-group">
+<label for="bookPhone">Phone Number <span aria-label="required">*</span></label>
+<input type="tel" id="bookPhone" name="phone" required aria-required="true" aria-label="Phone Number">
+<span class="error-message"></span>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Booking Details</legend>
+
+<div class="form-group">
+<label for="sport">Sport <span aria-label="required">*</span></label>
+<select id="sport" name="sport" required aria-required="true" aria-label="Select Sport">
+<option value="">-- Select a Sport --</option>
+<option value="football">Football</option>
+<option value="rugby">Rugby</option>
+<option value="ballet">Ballet</option>
+<option value="table-tennis">Table Tennis</option>
+<option value="handball">Handball</option>
+<option value="gymnastics">Gymnastics</option>
+<option value="wrestling">Wrestling</option>
+<option value="taekwondo">Taekwondo</option>
+<option value="judo">Judo</option>
+<option value="volleyball">Volleyball</option>
+</select>
+<span class="error-message"></span>
+</div>
+
+<div class="form-group">
+<label for="sessionDate">Preferred Date <span aria-label="required">*</span></label>
+<input type="date" id="sessionDate" name="date" required aria-required="true" aria-label="Session Date">
+<span class="error-message"></span>
+</div>
+
+<div class="form-group">
+<label for="sessionTime">Preferred Time <span aria-label="required">*</span></label>
+<select id="sessionTime" name="time" required aria-required="true" aria-label="Session Time">
+<option value="">-- Select Time --</option>
+<option value="06:00">6:00 AM</option>
+<option value="07:00">7:00 AM</option>
+<option value="14:00">2:00 PM</option>
+<option value="15:00">3:00 PM</option>
+<option value="17:00">5:00 PM</option>
+<option value="18:00">6:00 PM</option>
+<option value="19:00">7:00 PM</option>
+</select>
+<span class="error-message"></span>
+</div>
+
+<div class="form-group">
+<label for="level">Skill Level <span aria-label="required">*</span></label>
+<select id="level" name="level" required aria-required="true" aria-label="Skill Level">
+<option value="">-- Select Level --</option>
+<option value="beginner">Beginner</option>
+<option value="intermediate">Intermediate</option>
+<option value="advanced">Advanced</option>
+</select>
+<span class="error-message"></span>
+</div>
+
+<div class="form-group">
+<label for="participants">Number of Participants <span aria-label="required">*</span></label>
+<input type="number" id="participants" name="participants" min="1" max="10" required aria-required="true" aria-label="Number of Participants">
+<span class="error-message"></span>
+</div>
+
+<div class="form-group">
+<label for="notes">Special Requests or Notes</label>
+<textarea id="notes" name="notes" rows="4" aria-label="Special Requests or Notes"></textarea>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Confirmation</legend>
+
+<div class="form-group checkbox">
+<input type="checkbox" id="terms" name="terms" required aria-required="true" aria-label="Agree to Terms">
+<label for="terms">I have read and agree to the booking terms <span aria-label="required">*</span></label>
+<span class="error-message"></span>
+</div>
+
+<div class="form-group">
+<label for="captchaBook">What is 12 - 3? <span aria-label="required">*</span></label>
+<input type="text" id="captchaBook" name="captcha" required aria-required="true" aria-label="CAPTCHA: What is 12 minus 3?">
+<span class="error-message"></span>
+</div>
+</fieldset>
+
+<div class="button-group">
+<button type="submit" class="btn btn-primary" aria-label="Submit Booking Request">Submit Booking</button>
+<button type="reset" class="btn btn-secondary" aria-label="Clear Booking Form">Clear Form</button>
+</div>
+</form>
+
+<div class="booking-note">
+<p><strong>Note:</strong> A confirmation email will be sent to your email address within 24 hours with booking details and payment instructions.</p>
+</div>
+</section>
+</main>
+
+<footer role="contentinfo">
+<div class="footer-content">
+<p>&copy; 2026 SRC Sports Academy. All rights reserved.</p>
+<p>Follow us: <a href="https://facebook.com" target="_blank">Facebook</a> | <a href="https://twitter.com" target="_blank">Twitter</a> | <a href="https://instagram.com" target="_blank">Instagram</a></p>
+</div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Register at SRC Sports Academy - Join our community">
+<title>Register - SRC Sports Academy</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header role="banner">
+<nav class="navbar" role="navigation" aria-label="Main Navigation">
+<h1 class="logo">SRC Sports Academy</h1>
+<button class="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">☰</button>
+<ul class="nav-links" id="navMenu">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="register.html" aria-current="page">Register</a></li>
+<li><a href="activities.html">Activities</a></li>
+<li><a href="booking.html">Booking</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<section class="page-header" aria-label="Page Header">
+<h1>Create Your Account</h1>
+<p>Join the SRC Sports Academy community today</p>
+</section>
+
+<section class="form-section">
+<form id="registerForm" method="POST" action="#" role="form" aria-label="Registration Form">
+<fieldset>
+<legend>Personal Information</legend>
+
+<div class="form-group">
+<label for="fullName">Full Name <span aria-label="required">*</span></label>
+<input type="text" id="fullName" name="fullName" required aria-required="true" aria-label="Full Name">
+<span class="error-message" id="fullNameError"></span>
+</div>
+
+<div class="form-group">
+<label for="email">Email Address <span aria-label="required">*</span></label>
+<input type="email" id="email" name="email" required aria-required="true" aria-label="Email Address">
+<span class="error-message" id="emailError"></span>
+</div>
+
+<div class="form-group">
+<label for="phone">Phone Number <span aria-label="required">*</span></label>
+<input type="tel" id="phone" name="phone" required aria-required="true" aria-label="Phone Number">
+<span class="error-message" id="phoneError"></span>
+</div>
+
+<div class="form-group">
+<label for="dob">Date of Birth <span aria-label="required">*</span></label>
+<input type="date" id="dob" name="dob" required aria-required="true" aria-label="Date of Birth">
+<span class="error-message" id="dobError"></span>
+</div>
+
+<div class="form-group">
+<label for="password">Password <span aria-label="required">*</span></label>
+<input type="password" id="password" name="password" required aria-required="true" aria-label="Password">
+<span class="error-message" id="passwordError"></span>
+</div>
+
+<div class="form-group">
+<label for="confirmPassword">Confirm Password <span aria-label="required">*</span></label>
+<input type="password" id="confirmPassword" name="confirmPassword" required aria-required="true" aria-label="Confirm Password">
+<span class="error-message" id="confirmPasswordError"></span>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Preferences</legend>
+
+<div class="form-group">
+<label for="sport">Interested Sport <span aria-label="required">*</span></label>
+<select id="sport" name="sport" required aria-required="true" aria-label="Interested Sport">
+<option value="">-- Select a Sport --</option>
+<option value="football">Football</option>
+<option value="rugby">Rugby</option>
+<option value="ballet">Ballet</option>
+<option value="table-tennis">Table Tennis</option>
+<option value="handball">Handball</option>
+<option value="gymnastics">Gymnastics</option>
+<option value="wrestling">Wrestling</option>
+<option value="taekwondo">Taekwondo</option>
+<option value="judo">Judo</option>
+<option value="volleyball">Volleyball</option>
+</select>
+</div>
+
+<div class="form-group checkbox">
+<input type="checkbox" id="newsletter" name="newsletter" value="yes" aria-label="Subscribe to Newsletter">
+<label for="newsletter">Subscribe to our newsletter for updates and announcements</label>
+</div>
+
+<div class="form-group checkbox">
+<input type="checkbox" id="terms" name="terms" required aria-required="true" aria-label="Agree to Terms">
+<label for="terms">I agree to the <a href="#" target="_blank">Terms and Conditions</a> <span aria-label="required">*</span></label>
+<span class="error-message" id="termsError"></span>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Verification</legend>
+
+<div class="form-group">
+<label for="captcha">What is 7 + 5? <span aria-label="required">*</span></label>
+<input type="text" id="captcha" name="captcha" required aria-required="true" aria-label="CAPTCHA: What is 7 plus 5?">
+<span class="error-message" id="captchaError"></span>
+</div>
+</fieldset>
+
+<div class="button-group">
+<button type="submit" class="btn btn-primary" aria-label="Submit Registration Form">Register</button>
+<button type="reset" class="btn btn-secondary" aria-label="Clear Registration Form">Clear</button>
+</div>
+</form>
+
+<p class="login-link">Already have an account? <a href="#" aria-label="Go to login page">Log in here</a></p>
+</section>
+</main>
+
+<footer role="contentinfo">
+<div class="footer-content">
+<p>&copy; 2026 SRC Sports Academy. All rights reserved.</p>
+<p>Follow us: <a href="https://facebook.com" target="_blank">Facebook</a> | <a href="https://twitter.com" target="_blank">Twitter</a> | <a href="https://instagram.com" target="_blank">Instagram</a></p>
+</div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SRC Sports Academy - Modern sports training platform with wrestling, taekwondo, judo, volleyball, and more.">
+<title>SRC Sports Academy - Home</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<header role="banner">
+<nav class="navbar" role="navigation" aria-label="Main Navigation">
+<h1 class="logo">SRC Sports Academy</h1>
+<button class="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">☰</button>
+<ul class="nav-links" id="navMenu">
+<li><a href="index.html" aria-current="page">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="activities.html">Activities</a></li>
+<li><a href="booking.html">Booking</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<section class="hero" aria-label="Hero Section">
+<video autoplay muted loop playsinline>
+<source src="videos/sports.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<div class="hero-overlay"></div>
+<div class="hero-content">
+<h2>Train. Compete. Excel.</h2>
+<p>Welcome to SRC Sports Academy - Your Gateway to Sporting Excellence</p>
+<a href="booking.html" class="btn btn-primary">Book Now</a>
+</div>
+</section>
+
+<section class="search-section" aria-label="Search Section">
+<div class="search-container">
+<input type="text" id="searchInput" placeholder="Search sports..." aria-label="Search Sports">
+<button type="button" id="searchBtn" aria-label="Search Button">🔍</button>
+</div>
+</section>
+
+<section class="sports-section" aria-label="Sports Programs">
+<h2>Our Sports Programs</h2>
+<div class="sports-container">
+<article class="sport-card" role="article">
+<h3>Football</h3>
+<p>Professional football training and competitive leagues</p>
+</article>
+<article class="sport-card" role="article">
+<h3>Rugby</h3>
+<p>High-intensity team sport training</p>
+</article>
+<article class="sport-card" role="article">
+<h3>Ballet</h3>
+<p>Artistic dance and movement training</p>
+</article>
+<article class="sport-card" role="article">
+<h3>Table Tennis</h3>
+<p>Precision and speed development</p>
+</article>
+<article class="sport-card" role="article">
+<h3>Handball</h3>
+<p>Team coordination and athletic performance</p>
+</article>
+<article class="sport-card" role="article">
+<h3>Gymnastics</h3>
+<p>Flexibility and strength conditioning</p>
+</article>
+<article class="sport-card" role="article">
+<h3>Wrestling</h3>
+<p>Combat sports and grappling techniques</p>
+</article>
+<article class="sport-card" role="article">
+<h3>Taekwondo</h3>
+<p>Martial arts discipline and self-defense</p>
+</article>
+<article class="sport-card" role="article">
+<h3>Judo</h3>
+<p>Traditional martial art and competitive training</p>
+</article>
+<article class="sport-card" role="article">
+<h3>Volleyball</h3>
+<p>Team sports with dynamic coordination</p>
+</article>
+</div>
+</section>
+
+<section class="highlights-section" aria-label="Academy Highlights">
+<h2>Why Choose SRC Sports Academy?</h2>
+<div class="highlights-container">
+<div class="highlight-card">
+<h3>Expert Coaches</h3>
+<p>Learn from experienced professionals in each sport</p>
+</div>
+<div class="highlight-card">
+<h3>Community Focus</h3>
+<p>Build lasting connections with athletes and coaches</p>
+</div>
+<div class="highlight-card">
+<h3>Modern Facilities</h3>
+<p>State-of-the-art training equipment and venues</p>
+</div>
+<div class="highlight-card">
+<h3>Flexible Schedules</h3>
+<p>Training sessions designed for your lifestyle</p>
+</div>
+</div>
+</section>
+
+<section class="media-section" aria-label="Media Coverage">
+<h2>Featured Media</h2>
+<div class="media-container">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Sports Highlights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</section>
+
+<section class="social-section" aria-label="Social Media">
+<h2>Follow Us</h2>
+<div class="social-links">
+<a href="https://facebook.com" aria-label="Facebook" target="_blank">f</a>
+<a href="https://twitter.com" aria-label="Twitter" target="_blank">𝕏</a>
+<a href="https://instagram.com" aria-label="Instagram" target="_blank">📷</a>
+</div>
+</section>
+</main>
+
+<footer role="contentinfo">
+<div class="footer-content">
+<p>&copy; 2026 SRC Sports Academy. All rights reserved.</p>
+<p>Follow us: <a href="https://facebook.com" target="_blank">Facebook</a> | <a href="https://twitter.com" target="_blank">Twitter</a> | <a href="https://instagram.com" target="_blank">Instagram</a></p>
+<p id="visitor-counter" aria-live="polite"></p>
+</div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contact SRC Sports Academy - Get in touch with us">
+<title>Contact - SRC Sports Academy</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header role="banner">
+<nav class="navbar" role="navigation" aria-label="Main Navigation">
+<h1 class="logo">SRC Sports Academy</h1>
+<button class="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">☰</button>
+<ul class="nav-links" id="navMenu">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="activities.html">Activities</a></li>
+<li><a href="booking.html">Booking</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="contact.html" aria-current="page">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<section class="page-header" aria-label="Page Header">
+<h1>Contact Us</h1>
+<p>We'd love to hear from you. Get in touch with our team.</p>
+</section>
+
+<section class="contact-container">
+  <div class="contact-info">
+    <article class="contact-card">
+      <h2>Location</h2>
+      <p>SRC Sports Academy</p>
+      <p>Pentecost University Campus</p>
+      <p>Main Sports Complex</p>
+      <p>Sports Drive, University Avenue</p>
+    </article>
+
+    <article class="contact-card">
+      <h2>Contact Information</h2>
+      <p><strong>Email:</strong> <a href="mailto:info@srcsportsacademy.edu">info@srcsportsacademy.edu</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+      <p><strong>Office Hours:</strong> Monday - Friday, 8:00 AM - 6:00 PM</p>
+      <p><strong>Weekend Support:</strong> Saturday & Sunday, 10:00 AM - 4:00 PM</p>
+    </article>
+
+    <article class="contact-card">
+      <h2>Departments</h2>
+      <p><strong>General Inquiries:</strong> info@srcsportsacademy.edu</p>
+      <p><strong>Bookings:</strong> bookings@srcsportsacademy.edu</p>
+      <p><strong>Coaching Staff:</strong> coaches@srcsportsacademy.edu</p>
+      <p><strong>Memberships:</strong> members@srcsportsacademy.edu</p>
+    </article>
+  </div>
+</section>
+
+<section class="form-section">
+  <h2>Send us a Message</h2>
+  <form id="contactForm" method="POST" action="#" role="form" aria-label="Contact Form">
+    <fieldset>
+      <legend>Your Information</legend>
+
+      <div class="form-group">
+        <label for="contactName">Full Name <span aria-label="required">*</span></label>
+        <input type="text" id="contactName" name="name" required aria-required="true" aria-label="Full Name">
+        <span class="error-message"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="contactEmail">Email Address <span aria-label="required">*</span></label>
+        <input type="email" id="contactEmail" name="email" required aria-required="true" aria-label="Email Address">
+        <span class="error-message"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="contactPhone">Phone Number</label>
+        <input type="tel" id="contactPhone" name="phone" aria-label="Phone Number">
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject <span aria-label="required">*</span></label>
+        <select id="subject" name="subject" required aria-required="true" aria-label="Message Subject">
+          <option value="">-- Select Subject --</option>
+          <option value="general">General Inquiry</option>
+          <option value="booking">Booking Question</option>
+          <option value="coaching">Coaching Inquiry</option>
+          <option value="membership">Membership</option>
+          <option value="feedback">Feedback</option>
+          <option value="other">Other</option>
+        </select>
+        <span class="error-message"></span>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Your Message</legend>
+
+      <div class="form-group">
+        <label for="message">Message <span aria-label="required">*</span></label>
+        <textarea id="message" name="message" rows="6" required aria-required="true" aria-label="Message Content" placeholder="Please tell us how we can help..."></textarea>
+        <span class="error-message"></span>
+      </div>
+
+      <div class="form-group checkbox">
+        <input type="checkbox" id="contactNewsletter" name="newsletter" value="yes" aria-label="Subscribe to Newsletter">
+        <label for="contactNewsletter">Subscribe to our newsletter for updates and special offers</label>
+      </div>
+
+      <div class="form-group">
+        <label for="contactCaptcha">What is 8 + 4? <span aria-label="required">*</span></label>
+        <input type="text" id="contactCaptcha" name="captcha" required aria-required="true" aria-label="CAPTCHA: What is 8 plus 4?">
+        <span class="error-message"></span>
+      </div>
+    </fieldset>
+
+    <div class="button-group">
+      <button type="submit" class="btn btn-primary" aria-label="Submit Contact Form">Send Message</button>
+      <button type="reset" class="btn btn-secondary" aria-label="Clear Contact Form">Clear</button>
+    </div>
+  </form>
+
+  <p class="form-note">We'll respond to your inquiry within 24 hours during business days.</p>
+</section>
+</main>
+
+<footer role="contentinfo">
+<div class="footer-content">
+<p>&copy; 2026 SRC Sports Academy. All rights reserved.</p>
+<p>Follow us: <a href="https://facebook.com" target="_blank">Facebook</a> | <a href="https://twitter.com" target="_blank">Twitter</a> | <a href="https://instagram.com" target="_blank">Instagram</a></p>
+</div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
